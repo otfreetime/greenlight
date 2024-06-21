@@ -9,9 +9,9 @@ services:
       - ./data/postgres/14/database_data:/var/lib/postgresql/data
     environment:
       - POSTGRES_USER=postgres
-      - POSTGRES_PASSWORD=9edca27fef5c544a7082e4a3b94950aec3568795f53fa5d2
+      - POSTGRES_PASSWORD=1234
     ports:
-      - 5432:5432
+      - 127.0.0.1:5432:5432
 
   redis:
     image: redis:6.2-alpine3.17
